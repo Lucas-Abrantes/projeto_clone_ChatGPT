@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <title>Projeto clone ChatGPT</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="nome_gpt">
+                <h1 class="nome_principal">ChatGPT</h1>
+            </div>
+            <div class="container">
+                <article class="artigos"> 
+                    <div class="conteudo">
+                        <div class="sobre">
+                            <img id="imagem" src="imagens/sol.png">
+                            <h2 class="titulo">Examples</h2>
+                        </div>
+                        <ul class="perguntas">
+                            <li id="items">"Explique o que é um transistor"</li>
+                            <li id="items">"Como criar uma classe utilizando Python?"</li>
+                            <li id="items">"Como se deu o desenvolvimento da teoria<br> da relatividade geral?"</li>
+                        </ul>
+                    </div>
+                </article>
+            <article class="artigos">   
+                <div class="conteudo">
+                    <div class="sobre">
+                        <img id="imagem" src="imagens/power.png">
+                        <h2 class="titulo">Capabilities</h2>
+                    </div>
+                    <ul class="perguntas">
+                        <li id="items">"Explique o que é um transistor"</li>
+                        <li id="items">"Como criar uma classe utilizando Python?"</li>
+                        <li id="items">"Como se deu o desenvolvimento da teoria<br> da relatividade geral?"</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="artigos">   
+                <div class="conteudo">
+                    <div class="sobre">
+                        <img id="imagem" src="imagens/aviso.png">
+                        <h2 class="titulo">Limitations</h2>
+                    </div>
+                    
+                    <ul class="perguntas">
+                        <li id="items">"Explique o que é um transistor"</li>
+                        <li id="items">"Como criar uma classe utilizando Python?"</li>
+                        <li id="items">"Como se deu o desenvolvimento da teoria<br> da relatividade geral?"</li>
+                    </ul>
+                </div>
+            </article>
+            </div>
+            <div class="chat_mensagem">
+                <input  placeholder="Send a menssage" id="chat">
+                <img class="enviar" src="imagens/enviar.png">
+            </div>
+
+            <footer class="rodape">
+                <p class="texto_rodape">Free Research Preview. ChatGPT may produce inaccurate information about people, places, or facts. ChatGPT May 3 Version.</p>
+            </footer>
+        </main>
+
+        <div class="navegacao">
+            <nav class="nav_items">
+                <div id="link_nav">
+                    <a class="new_chat" href="#">New chat</a>
+                    <img src="imagens/soma.svg" id="img_link">
+                </div>
+
+                <div class="pesquisa">
+                    <div id="infos">
+                        <h4>Previous 7 Days</h4>
+                    </div>
+                    <div class="result">
+                        <ol class="lista_result">
+                            <li class="items2">Gerando uma busca em Python</li>
+                            <li class="img1"><img src="imagens/chat2.png"></li>
+                        </ol> 
+                    </div>
+                </div>
+                <div class="pesquisa">
+                    <div id="infos">
+                        <h4>Previous 30 Days</h4>
+                    </div>
+                    <div class="result">
+                        <ol class="lista_result">
+                            <li class="items2">Gerando uma busca para python</li>
+                            <li><img src="imagens/chat2.png"></li>
+                        </ol> 
+                        <ol class="lista_result">
+                            <li class="items2">Gerando uma busca para python</li>
+                            <li><img src="imagens/chat2.png"></li>
+                        </ol> 
+                    </div>
+                </div>
+                <div class="pesquisa">
+                    <div id="infos">
+                        <h4>March</h4>
+                    </div>
+                    <div class="result">
+                        <ol class="lista_result">
+                            <li class="items2">Gerando uma busca para python</li>
+                            <li><img src="imagens/chat2.png"></li>
+                        </ol> 
+                        <ol class="lista_result">
+                            <li class="items2">Gerando uma busca para python</li>
+                            <li><img src="imagens/chat2.png"></li>
+                        </ol> 
+                    </div>
+                </div>
+                <div class="container_perfil">
+                    <div class="upgrade">
+                        <div class="conteudo_perfil">
+                            <img id="usuario" src="imagens/usuario.png">
+                            <span class="plus">Upgrade to Plus</span>
+                        </div>
+                        <span class="new">NEW</span>
+                    </div>
+                    <div class="perfil">
+                        <div class="conteudo_perfil">
+                            <img id="perfil_pessoal" src="imagens/perfil_pessoal.png">
+                            <span class="nome_perfil">Lucas Abrantes</span>
+                        </div>
+                        <div class="cirulo">
+                            <circle cx="12" cy="12" r="1">.</circle>
+                            <circle cx="19" cy="12" r="1">.</circle>
+                            <circle cx="5" cy="12" r="1">.</circle>
+                        </div>   
+                    </div>
+                </div>
+            </nav>
+        </div> 
+    </body>
+</html>
