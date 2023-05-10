@@ -11,11 +11,10 @@
 
 body, html{
     height: 100%;
-    width: 100%;
+    font-size: 100%;
 }
 
 body{
-    font-size: 100%;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -26,9 +25,10 @@ main{
     display: flex;
     justify-content: end;
     flex-direction: column;
-    width: 79%;
+    /*width: 79%;*/
+    width: 100%;
     align-items: center;
-    position: relative;
+    overflow: hidden;
 }
 
 .nome_gpt{
@@ -141,7 +141,7 @@ main{
 /* inicio navegação*/
 
 .navegacao{
-    width: 400px;
+    width: 350px;
     background-color: rgba(32,33,35,255);
     text-align: center;
     padding: 8px;
@@ -153,9 +153,12 @@ main{
 
 .nav_items{
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    text-overflow: ellipsis;
+    
+    overflow: hidden;
 }
 
 
@@ -163,7 +166,7 @@ main{
     border: 1px solid #4c4c4e;
     display: flex;
     width: 300px;
-    margin: 0 auto;
+    margin-left: 11px;
     height: 59px;
     flex-direction: row-reverse;
     justify-content: start;
@@ -193,7 +196,6 @@ main{
 
 .pesquisa{
     width: 100%;
-    margin: 0 auto;
     display: flex;
     align-items: start;
     flex-direction: column;
@@ -219,12 +221,13 @@ main{
     width: 100%;
     flex-direction: row-reverse;
     margin-top: 2rem;
+    justify-content: flex-end;
     gap: 18px;
 }
 
 
 .items2{
-    font-size: 18px;
+    font-size: 20px;
     text-overflow: ellipsis;
     white-space: pre; 
     overflow: hidden;
@@ -237,6 +240,7 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 5rem;
 }
 
 /*
@@ -252,11 +256,12 @@ main{
 
 .upgrade{
     display: flex;
-    justify-content: space-around;
+    gap: 4rem;
     margin-top: 2px;
     align-items: center;
     width: 100%;
-    padding: 12px;
+    height: 50px;
+    justify-content: center;
 }
 
 
@@ -285,17 +290,19 @@ main{
 .perfil{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    gap: 5rem;
     align-items: center;
-    padding: 12px;
+    height: 100px;
+    justify-content: center;
 }
 
 
 .conteudo_perfil{
     display: flex;
-    justify-content: space-around;
+    gap: 12px;
     align-items: center;
-    gap: 15px;
+    margin-left: 8px;
+   
 }
 
 #perfil_pessoal{
